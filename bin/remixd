@@ -72,6 +72,12 @@ if (program.profiler) {
   killCallBack.push(profilerRouter.start())
 }
 
+var web3GetPeersRouter = new Router(65522, servicesList['getweb3peers'], { remixIdeUrl: program.remixIde }, (webSocket) => {
+	servicesList['getweb3peers'].setWebSocket(webSocket)
+}
+)
+killCallBack.push(web3GetPeersRouter.start())
+
 // kill
 function kill () {
   for (var k in killCallBack) {

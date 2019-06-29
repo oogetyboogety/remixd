@@ -39,7 +39,8 @@
     "serve": "7.0.0",
     "stdout": "0.0.3",
     "watch": "^1.0.2",
-    "web3": "1.0.0-beta.27",
+    "web3": "^1.0.0-beta.27",
+    "web3-eth-admin": "^1.0.0-beta.55",
     "websocket": "^1.0.24"
   },
   "python": {
